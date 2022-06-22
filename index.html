@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!-- en가 디폴트이고, ko로 고쳐주자. -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 반응형에 필수되는 부분 -->
+  <title>Masigray</title>
+  <link rel="stylesheet" href="js/swiper.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- 스타일적용법-1 : 헤드에 스타일적용 -->
+  <!-- 스타일적용법-2 : 바디자체에 스타일적용 (인라인)-->
+  <!-- 스타일적용법-3 : 링크로 css 스타일적용 -->
+  <!-- 스타일적용법-4 :  import로 외부스타일적용 (이걸적용하고싶을때도 3번적용법에다가 적용하는게 좋다.)-->
+  <!-- 되도록이면 2번은 사용하지말아라. 잊지마!! -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <!-- 전체 레이아웃 -->
+  <div class="wrap">
+    <!-- header  -->
+    <header class="header">
+      <div class="inner">
+        <a href="index.html" class="logo"></a>
+        <div class="gnb"></div>
+        <div class="h_sns">
+          <ul class="h_sns_list">
+            <li><a href="#" class="icon-bg">blog</a></li>
+            <li><a href="#" class="icon-is">instagram</a></li>
+            <li><a href="#" class="icon-fb">facebook</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- visual -->
+    <section class="visual">
+      <div class="swiper-container sw-visual">
+        <!-- 슬라이드 내용 -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="#" class="sw-visual-1"></a></div>
+          <div class="swiper-slide"><a href="#" class="sw-visual-2"></a></div>
+          <div class="swiper-slide"><a href="#" class="sw-visual-3"></a></div>
+          <div class="swiper-slide"><a href="#" class="sw-visual-4"></a></div>
+        </div>
+        <!-- 슬라이드 좌우버튼 -->
+        <button class="sw-visual-prev-btn"></button>
+        <button class="sw-visual-next-btn"></button>
+      </div>
+      <!--  -->
+    </section>
+    <!-- items -->
+    <section class="items">
+      <div class="inner clearfix">
+        <!-- ul,li 로 하기에는 애매한구조다 -->
+        <div class="items-box"><img src="images/마시그래이.png" alt="logo">
+          <span class="bar"></span>
+          <a href="">
+            <h3>브랜드스토리</h3>
+            <p>마시그래이는 표준어로 '마셔라' 라는<br>사투리의 표현을 가져온 것으로 브랜드네임에서부터<br>고객에게 친밀하게 다가가고자 하는 마음을 담았습니다.</p>
+          </a>
+        </div>
+        <div class="items-box clearfix">
+          <!-- item 슬라이드 -->
+          <div class="swiper-container sw-items">
+            <!--  기본형 : 슬라이드 내용-->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a href="" class="items1"></a></div>
+              <div class="swiper-slide"><a href="" class="items2"></a></div>
+              <div class="swiper-slide"><a href="" class="items3"></a></div>
+              <div class="swiper-slide"><a href="" class="items4"></a></div>
+              <div class="swiper-slide"><a href="" class="items5"></a></div>
+            </div>
+          </div>
+          <!-- 이동버튼 -->
+          <button class="sw-items-prev"></button>
+          <button class="sw-items-next"></button>
+          <!-- 컨트롤러 -->
+          <div class="sw-items-control">
+            <!-- 페이지네이션 . . . 말하는거임-->
+            <div class="sw-itmes-pgnt"></div>
+          </div>
+        </div>
+        <div class="items-box clearfix">
+          <a href="">
+            <div class="shop-open">
+              <h3>창업절차</h3>
+              <span class="bar"></span>
+              <p>체계적인 마시그래이의 <br>창업시스템에 대해 알아보세요.</p>
+            </div>
+          </a>
+          <a href="">
+            <div class="shop-open">
+              <h3>창업문의</h3>
+              <span class="bar"></span>
+              <p>차별화된 Take-out 브랜드<br>
+                마시그래이에 대해 알아보세요.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="items-box">
+          <div class="search-left"></div>
+          <div class="search">
+            <h2>STORE</h2>
+            <h3>매장</h3>
+            <p>가까운 마시그래이 매장을<br> 찾아보세요.</p>
+            <form action="test.asp" class="srch-form">
+              <!-- input에다가 입력한내용이 test.asp라는 파일로 간다는 의미이다. -->
+              <!-- <label for="shop">지점명</label> -->
+              <!-- label에서의  shop은  input에서 id를 말함-->
+              <!-- 이것의 기능은 '지점명'을 클릭하면 (버튼형태가아니라도) shop으로 지정된 id쪽으로 간다. -->
+              <input type="text" name="shop" id="shop" class="shop">
+              <input type="submit" class="search-bt">
+              <!-- <input type="image"> -->
+              <!-- get방식 post방식 -->
+              <!-- <button></button>의 기본타입은 submit -->
+
+
+              <!-- 웹서버구축 / 웹프로그래밍 /  DB구축 -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- beverage -->
+    <section class="beverage">
+      <div class="inner">
+        <div class="beverage-top">
+          <h2>MASIGRAY <strong>MENU</strong></h2>
+          <span>마시그래이의 다양한 메뉴를 맛보세요</span>
+        </div>
+        <div class="swiper-container sw-beverage">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="" class="bvrg1"></a></div>
+            <div class="swiper-slide"><a href="" class="bvrg2"></a></div>
+            <div class="swiper-slide"><a href="" class="bvrg3"></a></div>
+          </div>
+        </div>
+        <!-- 좌우버튼 -->
+        <button class="sw-beverage-prev"></button>
+        <button class="sw-beverage-next"></button>
+        <!-- 컨트롤러 -->
+        <div class="sw-beverage-control">
+          <div class="sw-beverage-pgnt swiper-pagination-fraction">
+            <span class="swiper-pagination-current">1</span>
+            <span class="swiper-pagination-total">3</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- franchiser-->
+    <section class="franchiser">
+      <div class="inner">
+        <div class="franchiser-up">
+          <h2>MASIGRAY <strong>Franchiser</strong></h2>
+          <span>마시그래이 신규 매장</span>
+        </div>
+        <div class="franchiser-down">
+          <ul class="fc-down-list clearfix">
+            <li><a href="" class="fcd-list-pic fcdl-pic1"><span>합천점</span></a></li>
+            <li><a href="" class="fcd-list-pic fcdl-pic2"><span>신천점</span></a></li>
+            <li><a href="" class="fcd-list-pic fcdl-pic3"><span>복현푸르지오점</span></a></li>
+            <li><a href="" class="fcd-list-pic fcdl-pic4"><span>대곡역점</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- sns -->
+    <section class="sns">
+      <div class="inner"></div>
+    </section>
+    <!-- footer  -->
+    <footer class="footer">
+      <footer class="inner">
+        </foot>
+      </footer>
+      <!-- id? class? 결론 : css에는 class를 사용하자!!  -->
+  </div>
+</body>
+
+</html>
