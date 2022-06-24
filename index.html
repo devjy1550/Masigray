@@ -4,6 +4,13 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/site.webmanifest">
+  <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- 반응형에 필수되는 부분 -->
@@ -22,19 +29,85 @@
 </head>
 
 <body>
+  <!-- 오른쪽 고정메뉴 -->
+  <div class="fix-menu">
+    <a href=""><img src="images/fix-1.png" alt="케이터링"></a>
+    <a href=""><img src="images/fix-2.png" alt="창업안내"></a>
+    <a href=""><img src="images/fix-3.png" alt="전화상담"></a>
+    <a href=""><img src="images/fix-4.png" alt="고객상담"></a>
+  </div>
   <!-- 전체 레이아웃 -->
   <div class="wrap">
     <!-- header  -->
     <header class="header">
       <div class="inner">
-        <a href="index.html" class="logo"></a>
-        <div class="gnb"></div>
-        <div class="h_sns">
-          <ul class="h_sns_list">
+        <div class="header-top clearfix">
+          <ul class="ht-sns-list">
             <li><a href="#" class="icon-bg">blog</a></li>
             <li><a href="#" class="icon-is">instagram</a></li>
             <li><a href="#" class="icon-fb">facebook</a></li>
           </ul>
+        </div>
+        <div class="header-main clearfix">
+          <a href="index.html" class="logo"></a>
+          <div class="gnb">
+            <ul class="menu">
+              <li>
+                <a href="#">마시그래이</a>
+                <ul class="submenu">
+                  <li><a href="#">회사소개</a></li>
+                  <li><a href="#">연혁</a></li>
+                  <li><a href="#">CEO인사말</a></li>
+                  <li><a href="#">BI / 비전</a></li>
+                  <li><a href="#">오시는길</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">메뉴</a>
+                <ul class="submenu">
+                  <li><a href="#">신메뉴</a></li>
+                  <li><a href="#">커피</a></li>
+                  <li><a href="#">음료</a></li>
+                  <li><a href="#">디저트</a></li>
+                  <li><a href="#">MD상품</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">프랜차이즈</a>
+                <ul class="submenu">
+                  <li><a href="#">가맹안내</a></li>
+                  <li><a href="#">가맹절차</a></li>
+                  <li><a href="#">매장인테리어</a></li>
+                  <li><a href="#">커피 아카데미</a></li>
+                  <li><a href="#">가맹상담신청</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#">매장안내</a>
+                <ul class="submenu">
+                  <li><a href="#">매장안내</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#">공지사항</a>
+                <ul class="submenu">
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">이벤트</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#">고객의소리</a>
+                <ul class="submenu">
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Q&amp;A</a></li>
+                  <li><a href="#">케이터링</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -163,24 +236,51 @@
         </div>
         <div class="franchiser-down">
           <ul class="fc-down-list clearfix">
-            <li><a href="" class="fcd-list-pic fcdl-pic1"><p>합천점</p></a></li>
-            <li><a href="" class="fcd-list-pic fcdl-pic2"><p>신천점</p></a></li>
-            <li><a href="" class="fcd-list-pic fcdl-pic3"><p>복현푸르지오점</p></a></li>
-            <li><a href="" class="fcd-list-pic fcdl-pic4"><p>대곡역점</p></a></li>
+            <li><a href="" class="fcd-list-pic fcdl-pic1">
+                <p>합천점</p>
+              </a></li>
+            <li><a href="" class="fcd-list-pic fcdl-pic2">
+                <p>신천점</p>
+              </a></li>
+            <li><a href="" class="fcd-list-pic fcdl-pic3">
+                <p>복현푸르지오점</p>
+              </a></li>
+            <li><a href="" class="fcd-list-pic fcdl-pic4">
+                <p>대곡역점</p>
+              </a></li>
           </ul>
         </div>
       </div>
     </section>
     <!-- sns -->
     <section class="sns">
-      <div class="inner"></div>
+      <div class="inner">
+        <h2>MASIGRAY <strong>SNS</strong></h2>
+        <span>#masigray</span>
+      </div>
     </section>
     <!-- footer  -->
     <footer class="footer">
-      <footer class="inner">
-        </foot>
-      </footer>
-      <!-- id? class? 결론 : css에는 class를 사용하자!!  -->
+      <div class="inner">
+        <ul class="footer-menu">
+          <li><a class="f-menu-list">점주의 방</a></li>
+          <li><a class="f-menu-list">회사소개</a></li>
+          <li><a class="f-menu-list">개인정보취급방식</a></li>
+          <li><a class="f-menu-list">이메일무단수집거부</a></li>
+          <li><a class="f-menu-list">가맹문의</a></li>
+          <li><a class="f-menu-list">고객의 소리</a></li>
+        </ul>
+        <a href="" class="footer-logo"><img src="images/footer-logo.png" alt="마시그레이"></a>
+        <p class="footer-information">(주) 에스이엠<span> | </span>사업자등록번호 : 502 - 86 - 32017<span> | </span>대표이사 : 정영주 <br>
+          주소 : 대구광역시 수성구 만촌동 957-2번지 2층<span> | </span>전화 : 1899-2087<span> | </span>팩스 : 053-474-9522</p>
+        <ul class="footer-sns">
+          <li><a class="f-sns-list"><img src="images/f-blog.png" alt="BLOG"></a></li>
+          <li><a class="f-sns-list"><img src="images/f-insta.png" alt="INSTAGRAM"></a></li>
+          <li><a class="f-sns-list"><img src="images/f-facebook.png" alt="FACEBOOK"></a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- id? class? 결론 : css에는 class를 사용하자!!  -->
   </div>
 </body>
 
